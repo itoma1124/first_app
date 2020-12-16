@@ -1,0 +1,6 @@
+<h1>新規投稿ページ</h1>
+
+<%= form_with url: "/posts", method: :post, local: true do |form| %>
+  <%= form.text_field :content %> <!--　<%= 変数.スタイル :name属性 %>　name属性はparamsの中に作られるファイルのような物。複数の送信項目があったとしても、name属性を指定することで呼び出せる-->
+  <%= form.submit '投稿する' %>
+<% end %>
